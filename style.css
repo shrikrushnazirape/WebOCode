@@ -401,3 +401,126 @@ tr:hover{
     padding-top: 50px;
     padding-bottom: 80px;
 }
+#team{
+    background-color: #122023;
+    padding-top: 50px;
+}
+
+.cardcontainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #122023;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.card{
+    margin-bottom: 50px;
+    font-family: 'Orbitron', sans-serif !important;
+    border: 2px solid #0ae0df;
+    color: #fff;
+    padding: 1em;
+    background-color: #0D2C36;
+    box-shadow: 0px 0px 3px 1px #12a0a0, inset 0px 0px 3px 1px #12a0a0;
+    border-radius: 10px;
+}
+
+.dp{
+    position: relative;
+}
+.dp img{
+    max-width: 12rem !important;
+    object-fit:cover;
+    max-height: 12rem ;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dp .dp-arc-inner {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border: 6px solid transparent;
+    border-top-color: #0ae0df;
+    border-radius: 50%;
+    left: calc(50% - 6rem);
+    animation-duration: 2s;
+    animation-name: rotate-clock;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* display: none; */
+  }
+  
+  @keyframes rotate-clock {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.dp .dp-arc-outer {
+    position: absolute;
+    width: calc(12rem + 12px);
+    height: calc(12rem + 12px);
+    border: 6px solid transparent;
+    border-bottom-color: #0AE0DF;
+    border-radius: 50%;
+    left:  calc(50% - 6.2rem);
+    top:  calc(50% - 6.2rem);
+    animation-duration: 2s;
+    animation-name: rotate-anticlock;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes rotate-anticlock {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+.card-body{
+    text-align: center !important;
+}
+
+.card-body h5{
+    text-shadow: 0 0 10px cyan;
+	color: lightcyan;
+}
+.card-text{
+    font-family: sans-serif !important;
+}
+.icon{
+    background-color: white;
+}
+
+#team .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0ae0e026;
+    line-height: 20px;
+    text-shadow: 0 0 10px cyan;
+	color: lightcyan;
+    margin:5px;
+    border-radius: 5px;
+  }
+  
+
+#team .fa:hover {
+    transform: scale(1.1) !important;
+    text-shadow: 0 0 10px cyan;
+	color: lightcyan;
+    text-decoration: none;
+}
