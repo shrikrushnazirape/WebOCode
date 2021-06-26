@@ -658,3 +658,11 @@ tr:hover{
 }
 
 /* end of footer styling */
+
+.copyright{
+    color: lightcyan;
+}
+.copyright a{
+    text-decoration: none;
+    color: lightcyan;
+}
