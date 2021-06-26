@@ -9,6 +9,66 @@ html,body{
     padding:0
 }
 
+/* stylign for navbar  */
+.navbar{
+    background: #000000ca;
+    box-shadow: 0 0 20px 3px cyan;
+    border-bottom-left-radius: 70px;
+    color: cyan;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+   
+}
+
+.logo{
+    height: 50px;
+    margin-left: 30px;
+}
+
+.ham{
+   
+   color: cyan;
+   font-size: 1em;
+   
+}
+
+.navbar li {
+  font-size: 1em; 
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+  width: auto;
+  color: cyan;
+  text-shadow: 0 0 20px cyan;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+}
+.navbar  .nav-link{
+  
+  /* background: rgba(150, 173, 173, 0.548); */
+  font-family: 'Orbitron', sans-serif;
+  color: cyan;
+  text-shadow: 2px 2px 10px cyan;
+  margin-bottom: 3px;
+  border: 2px solid #0ae0df;
+  border-radius: 15px;
+  padding-bottom: 3px;
+}
+.nav-item:hover{
+  transform: scale(1.01) !important;
+  text-shadow: 0 0 10px cyan;
+  color: lightcyan;
+  text-decoration: none;
+  background-color: #0ae0e026;
+  font-weight: 600;
+  
+  
+}
+
+
+
 
 /* styling for main landing page  */
 
@@ -524,3 +584,77 @@ tr:hover{
 	color: lightcyan;
     text-decoration: none;
 }
+
+
+
+/* styling for footer   */
+.footer{
+    background-color: #122023;
+    padding: 70px 0;
+}
+.col h4{
+    font-size: 18px;
+    color: cyan;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 70px;
+
+}
+.col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: lightcyan;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.col ul li a:hover{
+    color: lightcyan;
+    padding-left: 8px;
+}
+.col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0  10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.col .social-links a:hover{
+    color: #122023;
+    background-color: #ffffff;
+}
+.col ul{
+    padding-left: 0px;
+}
+@media(max-width:767 px){
+    .col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+@media(max-width:574 px){
+    .col{
+        width: 100%;
+    }
+}
+
+/* end of footer styling */
