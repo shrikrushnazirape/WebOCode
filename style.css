@@ -91,6 +91,7 @@ html {
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding-top: 10vh;
 
 }
 
@@ -708,14 +709,14 @@ tr:hover{
     position: relative;
     display: inline-block;
     padding: 25px 30px;
-    margin-left:12vw;
+  
     color: #03e9f4;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
+   
    
 }
 
