@@ -7,8 +7,13 @@ html,body{
     background:black;
     margin:0;
     padding:0
+    
 }
 
+
+html {
+    scroll-behavior: smooth;
+  }
 /* stylign for navbar  */
 .navbar{
     background: #000000ca;
@@ -666,3 +671,157 @@ tr:hover{
     text-decoration: none;
     color: lightcyan;
 }
+
+
+#contact-us{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.096) 5%, rgba(3, 9, 10, 0.692) 38%, rgba(16, 43, 42, 0.514) 96%),url('./images/bgimage.jpg');
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, top;
+    width: 100%;
+    min-height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+#contact-us h1{
+    margin-top: 30px;
+}
+#contact-us p{
+    color: cyan;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+#contact-us a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin-left:12vw;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+
+#contact-us .btn{
+    background-color:rgba(36, 35, 35,0.5);
+    padding:0.5vw;
+    color:white;
+    border:0px;
+    width:100%;
+    font-size:15px;
+    cursor:caret;
+  }
+  
+#contact-us a:nth-child(1){
+      filter: hue-rotate(270deg);
+  }
+  #contact-us a:nth-child(2){
+      filter: hue-rotate(110deg);
+  }
+  #contact-us a span{
+      position: absolute;
+      display: block;
+  }
+  #contact-us a span:nth-child(1){
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg,transparent,#03e9f4);
+      animation: animate1 1s linear infinite;
+  }
+  @keyframes animate1{
+      0%{
+          left: -100%;
+      }
+      50%,100%{
+          left: 100%;
+      }
+  }
+  #contact-us a span:nth-child(2){
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg,transparent,#03e9f4);
+      animation: animate2c 1s linear infinite;
+      animation-delay: 0.25s;
+  }
+  @keyframes animate2c{
+      0%{
+          top: -100%;
+      }
+      50%,100%{
+          top: 100%;
+      }
+  }
+  #contact-us a span:nth-child(3){
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg,transparent,#03e9f4);
+      animation: animate3b 1s linear infinite;
+      animation-delay: 0.50s;
+  }
+  @keyframes animate3b{
+      0%{
+          right: -100%;
+      }
+      50%,100%{
+          right: 100%;
+      }
+  }
+  
+ #contact-us a span:nth-child(4){
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg,transparent,#03e9f4);
+      animation: animate4b 1s linear infinite;
+      animation-delay: 0.75s;
+  }
+@keyframes animate4b{
+      0%{
+          bottom: -100%;
+      }
+      50%,100%{
+          bottom: 100%;
+      }
+  }
+#contact-us  input {
+  
+      display: block;
+      width: 70vw;
+      border-radius: 3px;
+      padding: 10vh 15vw;
+      margin: 0 auto 10px auto;
+      display: block;
+      text-align: left;
+      font-size: 18px;
+      color: rgb(255, 255, 255);
+      font-weight: 300;
+    }
+  
+  
+#contact-us .btn-contact{
+      border-radius: 30px;
+      border: 0px;
+      margin-top: 5vw;
+      padding: 18px 45px;
+      margin-bottom: 2.5vw;
+  }
