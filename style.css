@@ -339,6 +339,10 @@ tr:hover{
     margin-bottom: 15vh;
   }
 
+  .table tr{
+    font-size: 15px;
+  }
+
   #main{
       min-height: 80vh;
   }
@@ -825,3 +829,8 @@ tr:hover{
       padding: 18px 45px;
       margin-bottom: 2.5vw;
   }
+
+
+@media only screen and (max-width: 600px) {
+   
+}
